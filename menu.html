@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio | Dessert Delight</title>
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+<body>
+    <main>
+        <header class="navbar" style="background-image: url('img/headerimg.jpg');">
+            <div class="container_nav">
+                <nav>
+                    <div class="img_nav">
+                        <a href="index.html"><img src="img/logo.png" alt="logoloja"></a>
+                    </div>
+                    <div class="nav-list">
+                        <ul class="ul">
+                            <li class="nav-item"><a href="index.html" class="nav-link">PÁGINA INICIAL</a></li>
+                            <li class="nav-item"><a href="menu.html" class="nav-link">CARDÁPIO</a></li>
+                            <li class="nav-item"><a href="reservas.html" class="nav-link">RESERVAS</a></li>
+                            <li class="nav-item"><a href="trabalhe-conosco.html" class="nav-link">TRABALHE CONOSCO</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-menu-icon">
+                        <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">PÁGINA INICIAL</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">CARDÁPIO</a></li>
+                    <li class="nav-item"><a href="reservas.html" class="nav-link">RESERVAS</a></li>
+                    <li class="nav-item"><a href="trabalhe-conosco.html" class="nav-link">TRABALHE CONOSCO</a></li>
+                </ul>
+            </div>
+
+            <section class="titulo">
+                <div class="titulo_text">
+                    <h1>CARDÁPIO</h1>
+                    <p>Acesse o nosso Cardápio e satisfaça seu Desejo!</p>
+                </div>
+            </section>
+        </header>
+
+        <section class="search-section">
+            <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Digite para buscar no cardápio..."/>
+        </section>
+
+        <h1 class="sobremesas">Aqui estão as nossas deliciosas opções</h1>
+
+        <section class="card-container">
+            <div class="card" data-name="Bolo de morango">
+                <img src="img/bolomorango.jpeg">
+                <div class="card-text">
+                    <h5>Bolo de morango</h5>
+                    <p>R$ 19,99</p>
+                </div>
+            </div>
+            <div class="card" data-name="Bolo de baunilha">
+                <img src="img/bolobau.jfif">
+                <div class="card-text">
+                    <h5>Bolo de baunilha</h5>
+                    <p>R$ 19,99</p>
+                </div>
+            </div>
+            <div class="card" data-name="Bolo de chocolate">
+                <img src="img/bolohocolate.jpeg">
+                <div class="card-text">
+                    <h5>Bolo de chocolate</h5>
+                    <p>R$ 19,99</p>
+                </div>
+            </div>
+            <div class="card" data-name="Tiramisu">
+                <img src="img/tiramisu.jfif">
+                <div class="card-text">
+                    <h5>Tiramisu</h5>
+                    <p>R$ 29,99</p>
+                </div>
+            </div>
+            <div class="card" data-name="Red Velvet">
+                <img src="img/redvelvet.jpeg">
+                <div class="card-text">
+                    <h5>Red Velvet</h5>
+                    <p>R$ 24,99</p>
+                </div>
+            </div>
+            <div class="card" data-name="Cheesecake">
+                <img src="img/cheesecake.jpeg">
+                <div class="card-text">
+                    <h5>Cheesecake</h5>
+                    <p>R$ 18,99</p>
+                </div>
+            </div>
+            <div class="card" data-name="Torta holandesa">
+                <img src="img/tortahol.jfif">
+                <div class="card-text">
+                    <h5>Torta holandesa</h5>
+                    <p>R$ 18,99</p>
+                </div>
+            </div>
+            <div class="card" data-name="Torta de limão">
+                <img src="img/tortalimao.jpeg">
+                <div class="card-text">
+                    <h5>Torta de limão</h5>
+                    <p>R$ 18,99</p>
+                </div>
+            </div>
+            <div class="card" data-name="Torta de chocolate">
+                <img src="img/tortachoc.jpeg">
+                <div class="card-text">
+                    <h5>Torta de chocolate</h5>
+                    <p>R$ 18,99</p>
+                </div>
+            </div>
+            <div class="card" data-name="Pudim">
+                <img src="img/pudim.avif">
+                <div class="card-text">
+                    <h5>Pudim</h5>
+                    <p>R$ 15,99</p>
+                </div>
+            </div>
+            <div class="card" data-name="Petit Gateau">
+                <img src="img/petit.jpg">
+                <div class="card-text">
+                    <h5>Petit Gateau</h5>
+                    <p>R$ 21,99</p>
+                </div>
+            </div>
+            <div class="card" data-name="Cookie">
+                <img src="img/cookies.jfif">
+                <div class="card-text">
+                    <h5>Cookie</h5>
+                    <p>R$ 4,99</p>
+                </div>
+            </div>
+        </section>
+
+       <footer class="footer">
+    <div class="footer-top">
+        <p>As sobremesas da <strong>Dessert Delight</strong> tornam o seu dia mais doce.</p>
+        <div class="social-icons">
+            <a href="#"><img src="img/instagram-icon.png" alt=""></a>
+            <a href="#"><img src="img/facebook-icon.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="footer-links">
+        <div class="footer-column">
+            <h3>Sobre a Dessert Delight</h3>
+            <a href="#">Nossa História</a>
+            <a href="#">Missão e Valores</a>
+        </div>
+        <div class="footer-column">
+            <h3>Nossas Sobremesas</h3>
+            <a href="menu.html">Cardápio Completo</a>
+            <a href="#">Tabela Nutricional</a>
+            <a href="#">Opções para Alérgicos</a>
+        </div>
+        <div class="footer-column">
+            <h3>Experiência em Casa</h3>
+            <a href="#">Delivery</a>
+            <a href="#">Faça em Casa</a>
+        </div>
+        <div class="footer-column">
+            <h3>Clientes e Contato</h3>
+            <a href="#">Fale Conosco</a>
+            <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Dessert Delight. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+        <script src="scripts/menu.js"></script>
+    </main>
+</body>
+</html>

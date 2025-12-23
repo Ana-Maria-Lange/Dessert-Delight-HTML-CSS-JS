@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dessert Delight - As melhores sobremesas artesanais de Curitiba">
+  <meta name="keywords" content="sobremesas, doces, bolos, tortas, cookies, Curitiba">
+  <title>Dessert Delight</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container_nav">
+      <nav>
+        <div class="img_nav">
+          <a href="index.html"><!--link pra pagina inicial--></a>
+          <img src="img/logoloja.jpg" alt="logoloja">
+        </div></a>
+        <div class="nav-list">
+          <ul class="ul">
+            <li class="nav-item"><a href="index.html" class="nav-link">PÁGINA INICIAL</a></li>
+            <li class="nav-item"><a href="menu.html" class="nav-link">CARDÁPIO</a></li>
+            <li class="nav-item"><a href="reservas.html" class="nav-link">RESERVAS</a></li>
+            <li class="nav-item"><a href="trabalhe-conosco.html" class="nav-link">TRABALHE CONOSCO</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu-icon">
+          <button xx="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+        </div>
+      </nav>
+
+
+
+      <div class="mobile-menu">
+
+        <ul>
+          <li class="nav-item"><a href="index.html" class="nav-link">PÁGINA INICIAL</a></li>
+          <li class="nav-item"><a href="menu.html" class="nav-link">CARDÁPIO</a></li>
+          <li class="nav-item"><a href="reservas.html" class="nav-link">RESERVAS</a></li>
+          <li class="nav-item"><a href="trabalhe-conosco.html" class="nav-link">TRABALHE CONOSCO</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Carrossel -->
+  <section class="carousel-container">
+    <div class="carousel">
+      <button class="carousel-btn prev" onclick="mudarSlide(-1)">&#10094;</button>
+
+      <div class="carousel-items">
+        <div class="carousel-slide">
+          <img src="img/restaurant1.jpg" alt="Restaurante 1">
+          <div class="carousel-caption">
+            <h2>Sejam Bem Vindos</h2>
+            <p>Nós da Dessert Delight estamos felizes com sua visita, aproveite para nos conhecer.</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="img/restaurant2.jpg" alt="Restaurante 2">
+          <div class="carousel-caption">
+            <h2>Ambiente <span>Aconchegante</span></h2>
+            <p>Venha experimentar o melhor da gastronomia em um ambiente acolhedor.</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="img/restaurant3.jpg" alt="Restaurante 3">
+          <div class="carousel-caption">
+            <h2>Sabores <span>Inesquecíveis</span></h2>
+            <p>Aproveite uma experiência única com pratos feitos para você.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-btn next" onclick="mudarSlide(1)">&#10095;</button>
+    </div>
+  </section>
+  <section class="about-section">
+    <div class="about-content">
+      <h2>Sobre a Dessert Delight</h2>
+      <p>A Dessert Delight começou com uma simples paixão por criar sobremesas irresistíveis que trazem felicidade a
+        cada mordida. Fundada em uma pequena cozinha, nossa missão sempre foi oferecer sabores únicos, combinando
+        ingredientes de qualidade com uma apresentação impecável. Ao longo dos anos, nos tornamos um destino popular
+        para os amantes de doces, trazendo experiências que vão além do sabor. Venha nos visitar e descubra o verdadeiro
+        prazer das sobremesas.</p>
+    </div>
+  </section>
+
+  <script src="scripts/carousel.js"></script>
+
+  
+  <section class="tabela">
+    <h2>Unidades e Horários de Funcionamento</h2>
+    <table class="info-tabela">
+      <thead>
+        <tr>
+
+          <th>Unidade</th>
+          <th>Endereço</th>
+          <th>Telefone</th>
+          <th>Horário de Funcionamento</th>
+
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+
+          <td>Parque</td>
+          <td>Rua das Flores, 123</td>
+          <td>(41) 9999-1234</td>
+          <td>Terça a Domingo: 10:00 - 18:00</td>
+          
+        </tr>
+
+        <tr>
+          <td>Shopping</td>
+          <td>Av. Principal, 456</td>
+          <td>(41) 9888-5678</td>
+          <td>Todos os dias: 11:00 - 20:00</td>
+
+        </tr>
+
+      </tbody>
+    </table>
+  </section>
+  
+</body>
+<!-- Rodapé -->
+<footer class="footer">
+  <div class="footer-top">
+    <p>As sobremesas da <strong>Dessert Delight</strong> tornam o seu dia mais doce.</p>
+    <div class="social-icons">
+      <a href="#" target="_blank"><img src="img/instagram-icon.png" alt="Instagram"></a>
+      <a href="#" target="_blank"><img src="img/facebook-icon.png" alt="Facebook"></a>
+    </div>
+  </div>
+
+  <div class="footer-links">
+    <div class="footer-column">
+      <h3 style="color: grey;">Sobre a Dessert Delight</h3>
+      <a href="#">Nossa História</a>
+      <a href="#">Missão e Valores</a>
+    </div>
+    <div class="footer-column">
+      <h3>Nossas Sobremesas</h3>
+      <a href="menu.html">Cardápio Completo</a>
+      <a href="#">Tabela Nutricional</a>
+      <a href="#">Opções para Alérgicos</a>
+    </div>
+    <div class="footer-column">
+      <h3>Experiência em Casa</h3>
+      <a href="#">Delivery</a>
+      <a href="#">Faça em Casa</a>
+    </div>
+    <div class="footer-column">
+      <h3>Clientes e Contato</h3>
+      <a href="#">Fale Conosco</a>
+      <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Dessert Delight. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</html>

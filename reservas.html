@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservas | Dessert Delight</title>
+    <link rel="stylesheet" href="styles/reservas.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+   <div class="container_nav">
+      <nav>
+        <div class="img_nav">
+          <a href="index.html"><!--link pra pagina inicial--></a>
+          <img src="img/logoloja.jpg" alt="logoloja">
+        </div></a>
+        <div class="nav-list">
+          <ul class="ul">
+            <li class="nav-item"><a href="index.html" class="nav-link">PÁGINA INICIAL</a></li>
+            <li class="nav-item"><a href="menu.html" class="nav-link">CARDÁPIO</a></li>
+            <li class="nav-item"><a href="reservas.html" class="nav-link">RESERVAS</a></li>
+            <li class="nav-item"><a href="trabalhe-conosco.html" class="nav-link">TRABALHE CONOSCO</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu-icon">
+          <button xx="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+        </div>
+      </nav>
+
+
+
+      <div class="mobile-menu">
+
+        <ul>
+          <li class="nav-item"><a href="index.html" class="nav-link">PÁGINA INICIAL</a></li>
+          <li class="nav-item"><a href="menu.html" class="nav-link">CARDÁPIO</a></li>
+          <li class="nav-item"><a href="reservas.html" class="nav-link">RESERVAS</a></li>
+          <li class="nav-item"><a href="trabalhe-conosco.html" class="nav-link">TRABALHE CONOSCO</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <div class="title">
+          <div class="subtitle">Faça sua reserva!</div>
+        </div>
+        <!--formulário-->
+        <div class="campos">
+          <label for="estado">Estado</label>
+
+          <select id="estado" class="select-estado">
+            <option>Selecione...</option>
+            <option>Paraná(PR)</option>
+            <option>Santa Catarina(SC)</option>
+          </select>
+
+          <span class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </span>
+        </div>
+
+        <div class="campos">
+          <label for="cidade">Cidade</label>
+
+          <select id="cidade" class="select-cidade">
+            <option>Selecione...</option>
+            <option>Curitiba(PR)</option>
+            <option>Londrina(PR)</option>
+            <option>Florianópolis(SC)</option>
+            <option>Blumenau(SC)</option>
+          </select>
+
+          <span class="icon">
+            <i class="fas fa-map"></i>
+          </span>
+        </div>
+
+        <div class="campos">
+          <label for="unidade">Unidade</label>
+
+          <select id="unidade" class="select-unidade">
+            <option>Selecione...</option>
+            <option value="parque">Parque</option>
+            <option value="shopping">Shopping</option>
+          </select>
+
+          <span class="icon">
+            <i class="fas fa-store"></i>
+          </span>
+        </div>
+
+        <div class="campos">
+          <label for="pessoas">Número de pessoas</label>
+          <select id="pessoas" class="select-pessoas">
+            <option>Selecione...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+
+          <span class="icon">
+            <i class="fas fa-users"></i>
+          </span>
+        </div>
+
+        <div class="campos">
+          <label for="data">Data da reserva</label>
+          <input type="date" id="data" class="label-data" />
+
+          <span class="icon">
+            <i class="fas fa-calendar-alt"></i>
+          </span>
+        </div>
+
+        <div class="campos">
+          <label for="horario">Horário</label>
+          <input type="time" id="horario" min="2024-11-07" max="2025-12-31
+          class=" label-horario">
+
+          <span class="icon">
+            <i class="fas fa-clock"></i>
+          </span>
+        </div>
+
+        <div class="campos">
+          <label for="nome">Nome</label>
+          <input type="text" class="input-nome" id="nome" />
+
+          <span class="icon">
+            <i class="fas fa-user"></i>
+          </span>
+        </div>
+
+        <div class="campos">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" class="input-cpf" maxlength="11" />
+
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+        </div>
+
+        <button id="botao" class="botao" disabled>Reservar</button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <p>
+          As sobremesas da <strong>Dessert Delight</strong> tornam o seu dia
+          mais doce.
+        </p>
+        <div class="social-icons">
+          <a href="#" target="_blank"
+            ><img src="img/instagram-icon.png" alt="Instagram"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="img/facebook-icon.png" alt="Facebook"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Sobre a Dessert Delight</h3>
+          <a href="#">Nossa História</a>
+          <a href="#">Missão e Valores</a>
+        </div>
+        <div class="footer-column">
+          <h3>Nossas Sobremesas</h3>
+          <a href="menu.html">Cardápio Completo</a>
+          <a href="#">Tabela Nutricional</a>
+          <a href="#">Opções para Alérgicos</a>
+        </div>
+        <div class="footer-column">
+          <h3>Experiência em Casa</h3>
+          <a href="#">Delivery</a>
+          <a href="#">Faça em Casa</a>
+        </div>
+        <div class="footer-column">
+          <h3>Clientes e Contato</h3>
+          <a href="#">Fale Conosco</a>
+          <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Dessert Delight. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+   <script>
+  /* Habilita o botão apenas com todos os campos preenchidos */
+  const inputs = document.querySelectorAll("input, select");
+  const botao = document.getElementById("botao");
+
+  function verificarCampos() {
+    let todosPreenchidos = true;
+    inputs.forEach((input) => {
+      if (input.value === "" || input.value === "Selecione...") {
+        todosPreenchidos = false;
+      }
+    });
+    botao.disabled = !todosPreenchidos;
+    botao.style.cursor = todosPreenchidos ? "pointer" : "not-allowed";
+  }
+
+  inputs.forEach((input) =>
+    input.addEventListener("input", verificarCampos)
+  );
+
+  /* Atualiza a página após clicar no botão reservar */
+  botao.addEventListener("click", () => {
+    alert("Reserva enviada com sucesso!");
+    location.reload();
+  });
+</script>
+
+  </body>
+</html>
